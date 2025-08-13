@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Professional Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body data-bs-theme="light">
+    <div class="floating-elements">
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+        <div class="floating-element"></div>
+    </div>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- home -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="display-4 fw-bold text-white mb-3">
+                            Hi, I'm <span class="text-primary">BHUPATHI HARICHARAN</span>
+                        </h1>
+                        <p class="lead text-white-50 mb-4">
+                            Web Developer & AI Passionate
+                        </p>
+                        <p class="text-white-50 mb-4">
+                            Passionate computer science student crafting innovative digital solutions and bringing ideas to life through code.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary btn-lg me-3 smooth-scroll">
+                                <i class="fas fa-code me-2"></i>View My Work
+                            </a>
+                            <a href="#contact" class="btn btn-outline-light btn-lg smooth-scroll">
+                                <i class="fas fa-envelope me-2"></i>Contact Me!
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <div class="hero-image">
+                        <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1755104081/WhatsApp_Image_2025-08-13_at_22.20.11_48cabf2d_gmrbo8.jpg" 
+                             alt="Professional Photo" class="img-fluid rounded-circle profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" class="smooth-scroll">
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+ <!-- About -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">About Me</h2>
+                    <p class="text-muted">Get to know me better</p>
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4" data-aos="fade-right">
+                    <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1754992197/WhatsApp_Image_2025-08-12_at_15.09.10_9f04ae68_euhygg.jpg" 
+                         alt="About Me" class="img-fluid rounded-3 shadow about-img">
+                </div>
+                <div class="col-lg-8" data-aos="fade-left">
+                    <div class="about-content">
+                        <h3 class="mb-3">Passionate Developer & Creative Thinker</h3>
+                        <p class="lead mb-4">
+                             <b>I'm Haricharan Bhupathi,</b> an AI enthusiast studying at Parul University, and a trained Full Stack Web Developer (MERN stack). I’m passionate about merging machine learning with modern web technologies to build intelligent, scalable solutions that have a real-world impact.,
+                        </p>
+                        <p class="mb-4">
+                            Currently pursuing my B.Tech in Computer Science, I'm excited about the intersection of technology and human experience. My goal is to contribute to meaningful projects that push the boundaries of what's possible in tech while creating positive impact in people's lives.
+                        </p>
+                        <p class="mb-4">
+                            <strong>Fun fact:</strong> When I'm not coding, you'll find me exploring new coffee shops, reading sci-fi novels, or planning my next adventure!
+                        </p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary me-2"></i><b>Problem Solving</b></li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> <b>Team Collaboration</b></li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> <b>Quick Learner</b></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-check text-primary me-2"></i> <b>Creative Thinking</b></li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> <b>Attention to Detail</b></li>
+                                    <li><i class="fas fa-check text-primary me-2"></i> <b>Continuous Learning</b></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Skills -->
+   <section id="skills" class="py-5 bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Skills</h2>
+                <p class="text-muted">Technologies and tools I work with</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="skill-card h-100">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Frontend</h4>
+                    <div class="skill-item">
+                        <span>HTML5</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>CSS3</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>JavaScript</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>React.js</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Bootstrap</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="skill-card h-100">
+                    <div class="skill-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h4>Backend</h4>
+                    <div class="skill-item">
+                        <span>Node.js</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Python</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 75%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MySQL</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>MongoDB</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="skill-card h-100">
+                    <div class="skill-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h4>Tools & Others</h4>
+                    <div class="skill-item">
+                        <span>Git & GitHub</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>VS Code</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Canva</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Photoshop</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <span>Microsoft Excel</span>
+                        <div class="progress">
+                            <div class="progress-bar" style="width: 65%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+ <!-- Projects -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Projects</h2>
+                    <p class="text-muted">Some of my recent work</p>
+                </div>
+            </div>
+            <div class="row">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1754993234/WhatsApp_Image_2025-08-12_at_15.36.10_9688a73f_cu3uwl.jpg" 
+                                 alt="Movie-review-App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Movie-review-App</h5>
+                            <p>Developed using Python, Flask, Django, and SQL queries to allow users to submit and browse movie reviews.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">html</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-success">Javascript</span>
+                                  <span class="badge bg-primary">Python</span>
+                                  <span class="badge bg-secondary">Flask,Django</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+       <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1754993235/WhatsApp_Image_2025-08-12_at_15.36.04_6d4701d5_agqner.jpg" 
+                                 alt="Diagnosis App" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Medical Diagnosis App</h5>
+                            <p>AI-based application to analyze medical scans and provide accurate diagnostic insights for cancer detection.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-warning">TenserFlow</span>
+                                <span class="badge bg-info"> PyTorch</span>
+                                <span class="badge bg-dark">Scikit-learn</span>
+                                <span class="badge bg-warning">Python</span>
+                                <span class="badge bg-info">Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      <!-- Project 3 -->
+                 <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1754994749/WhatsApp_Image_2025-08-12_at_16.02.02_5ddbed3b_svxyw6.jpg" 
+                                 alt="Photography-Themed" class="img-fluid">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-primary btn-sm me-2">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-secondary btn-sm">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h5>Photography-Themed</h5>
+                            <p>Designed and developed a modern, responsive photography-themed website with HTML, CSS, JavaScript, and Bootstrap, featuring interactive galleries, exhibits, and event showcases.</p>
+                            <div class="project-tech">
+                                <span class="badge bg-primary">html</span>
+                                <span class="badge bg-secondary">CSS</span>
+                                <span class="badge bg-success">Javascript</span>
+                                 <span class="badge bg-primary">Bootstrap </span>
+                                 <span class="badge bg-secondary">React.js</span>
+                                 
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ <!-- Experience -->
+    <section id="experience" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Experience</h2>
+                    <p class="text-muted">My professional journey</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="timeline">
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>GDG Cloud Ahmedabad</h4>
+                                    <span class="company">Google</span>
+                                    <span class="date">Aug-10</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Explored cutting-edge AI and cloud computing concepts through interactive sessions with industry experts.</li>
+                                        <li>Gained insights into future trends in AI-powered cloud solutions and their real-world applications.</li>
+                                        <li>Learned about cloud infrastructure and AI integration for scalable, high-performance systems.</li>
+                                        <li>Engaged with the developer community and received exclusive event swags as a participant.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>AI/ML Workshop - Parul University</h4>
+                                    <span class="date">July-2025</span>
+                                </div>
+                                <div class="timeline-body">
+                                    <ul>
+                                        <li>Built real-world AI programs through guided, hands-on sessions.</li>
+                                        <li>Learned to prepare and clean datasets, train models, and evaluate performance metrics.</li>
+                                        <li>Understood ML project workflows, from problem definition to deployment.</li>
+                                        <li>Applied practical machine learning techniques for problem-solving in real applications.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+      <!-- Education -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title">Education</h2>
+                    <p class="text-muted">My academic background</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right" data-aos-delay="100">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Bachelor of Technology</h4>
+                            <h5>Computer Science Engineering</h5>
+                            <p class="institution">XYZ University</p>
+                            <p class="duration">2022 - 2026</p>
+                            <p class="grade">CGPA: 8.5/10</p>
+                            <div class="relevant-courses">
+                                <h6>Relevant Coursework:</h6>
+                                <span class="badge bg-primary me-2 mb-2">Data Structures</span>
+                                <span class="badge bg-secondary me-2 mb-2">Algorithms</span>
+                                <span class="badge bg-success me-2 mb-2">Web Development</span>
+                                <span class="badge bg-warning me-2 mb-2">Database Systems</span>
+                                <span class="badge bg-info me-2 mb-2">Software Engineering</span>
+                                <span class="badge bg-danger me-2 mb-2">Computer Networks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-4" data-aos="fade-left" data-aos-delay="200">
+                    <div class="education-card">
+                        <div class="education-icon">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <div class="education-content">
+                            <h4>Higher Secondary Education</h4>
+                            <h5>Science (PCM + Computer Science)</h5>
+                            <p class="institution">ABC Higher Secondary School</p>
+                            <p class="duration">2020 - 2022</p>
+                            <p class="grade">Percentage: 92%</p>
+                            <div class="achievements">
+                                <h6>Achievements:</h6>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-graduation-cap text-success me-2"></i>Completed Intermediate (MPC) with 930/1000 marks</li>
+                                    <li><i class="fas fa-book-open text-primary me-2"></i>Strong foundation in Mathematics, Physics, and Computer Science</li>
+                                    <li><i class="fas fa-laptop-code text-warning me-2"></i>Early interest in AI and programming during school</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!-- Certifications -->
+<div class="row mt-5">
+    <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-center mb-4">Certifications</h3>
+        <div class="row">
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="certification-card text-center">
+                    <i class="fab fa-python text-info mb-2"></i>
+                    <h6>Python Programming Completion</h6>
+                    <small class="text-muted">GeeksforGeeks</small>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="certification-card text-center">
+                    <i class="fas fa-chart-line text-success mb-2"></i>
+                    <h6>Data Analytics Job Simulation</h6>
+                    <small class="text-muted">Deloitte</small>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 mb-3">
+                <div class="certification-card text-center">
+                    <i class="fab fa-google text-primary mb-2"></i>
+                    <h6>Generative AI Completion Certificate</h6>
+                    <small class="text-muted">Google Cloud</small>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+ <!-- Contact -->
+    <section id="contact" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title text-white">Get In Touch</h2>
+                    <p class="text-white-50">Let's discuss your next project</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4" data-aos="fade-right">
+                            <div class="contact-info">
+                                <h4 class="mb-4">Contact Information</h4>
+                                <div class="contact-item mb-3">
+                                    <i class="fas fa-envelope me-3 text-primary"></i>
+                                    <div>
+                                        <strong>Email</strong><br>
+                                        <a href="mailto:your.email@gmail.com" class="text-white-50" id="emailLink">your.email@gmail.com</a>
+                                        <button class="btn btn-sm btn-outline-light ms-2" onclick="copyEmail()" id="copyEmailBtn">
+                                            <i class="fas fa-copy"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="fas fa-phone me-3 text-primary"></i>
+                                    <div>
+                                        <strong>Phone</strong><br>
+                                        <span class="text-white-50">+91 9704113556</span>
+                                    </div>
+                                </div>
+                                <div class="contact-item mb-3">
+                                    <i class="fas fa-map-marker-alt me-3 text-primary"></i>
+                                    <div>
+                                        <strong>Location</strong><br>
+                                        <span class="text-white-50">Vadodara,Gujarat, India</span>
+                                    </div>
+                                </div>
+                                <div class="social-links mt-4">
+                                    <a href="https://linkedin.com/in/yourprofile" class="btn btn-outline-light btn-sm me-2" target="_blank">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://github.com/Haricharan2225" class="btn btn-outline-light btn-sm me-2" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://twitter.com/yourusername" class="btn btn-outline-light btn-sm me-2" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="https://www.instagram.com/chinnupatel_0311/" class="btn btn-outline-light btn-sm" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+  <!-- Contact Form -->
+                        <div class="col-lg-6 mb-4" data-aos="fade-left">
+                            <form id="contactForm" class="contact-form">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <input type="text" class="form-control" id="subject" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary w-100">
+                                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  <!-- Maps -->
+            <div class="row mt-5" data-aos="fade-up">
+                <div class="col-lg-12">
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3340.8117708768086!2d73.36084547474901!3d22.288700743316824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fda2400192473%3A0xc319c9237f2928e8!2sParul%20University!5e1!3m2!1sen!2sin!4v1755002066901!5m2!1sen!2sin" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0; border-radius: 10px;" 
+                            allowfullscreen="" 
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="footer">
+             <h3>Thanks for visiting My Portfolio! <i class="fas fa-heart text-danger"></i> </h3>
+        </div>
+    </section>
+
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="portfolio.js"></script>
+</body>
+</html>
