@@ -57,45 +57,57 @@
         </div>
     </nav>
     <!-- home -->
-    <section id="home" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6" data-aos="fade-right">
-                    <div class="hero-content">
-                        <h1 class="display-4 fw-bold text-white mb-3">
-                            Hi, I'm <span class="text-primary">BHUPATHI HARICHARAN</span>
-                        </h1>
-                        <p class="lead text-white-50 mb-4">
-                            Web Developer & AI Passionate
-                        </p>
-                        <p class="text-white-50 mb-4">
-                            Passionate computer science student crafting innovative digital solutions and bringing ideas to life through code.
-                        </p>
-                        <div class="hero-buttons">
-                            <a href="#projects" class="btn btn-primary btn-lg me-3 smooth-scroll">
-                                <i class="fas fa-code me-2"></i>View My Work
-                            </a>
-                            <a href="#contact" class="btn btn-outline-light btn-lg smooth-scroll">
-                                <i class="fas fa-envelope me-2"></i>Contact Me!
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center" data-aos="fade-left">
-                    <div class="hero-image">
-                        <img src="https://res.cloudinary.com/dnuzyfts7/image/upload/v1755104081/WhatsApp_Image_2025-08-13_at_22.20.11_48cabf2d_gmrbo8.jpg" 
-                             alt="Professional Photo" class="img-fluid rounded-circle profile-img">
+   <section id="home" class="hero-section">
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-100 text-center text-lg-start">
+            <div class="col-lg-12" data-aos="fade-up">
+                <div class="hero-content">
+                    <h1 class="display-4 fw-bold text-white mb-3">
+                        Hi, I'm <span class="text-primary">BHUPATHI HARICHARAN</span>
+                    </h1>
+                    <h2 class="role-text text-white-50 mb-4">
+                        <span id="typed-role"></span>
+                    </h2>
+                    <p class="text-white-50 mb-4">
+                        Passionate computer science student crafting innovative digital solutions 
+                        and bringing ideas to life through code.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary btn-lg me-3 smooth-scroll">
+                            <i class="fas fa-code me-2"></i>View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg smooth-scroll">
+                            <i class="fas fa-envelope me-2"></i>Contact Me!
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="scroll-indicator">
-            <a href="#about" class="smooth-scroll">
-                <i class="fas fa-chevron-down"></i>
-            </a>
-        </div>
-    </section>
+    </div>
+    <div class="scroll-indicator">
+        <a href="#about" class="smooth-scroll">
+            <i class="fas fa-chevron-down"></i>
+        </a>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+    var typed = new Typed("#typed-role", {
+        strings: [
+            "Web Developer",
+            "Passionate About AI",
+            "Problem Solver",
+            "Tech Explorer"
+        ],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true
+    });
+</script>
+
  <!-- About -->
     <section id="about" class="py-5">
         <div class="container">
@@ -144,49 +156,49 @@
         </div>
     </section>
  <!-- Skills -->
-   <section id="skills" class="py-5 bg-light">
+   <section id="skills" class="py-5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title">Skills</h2>
-                <p class="text-muted">Technologies and tools I work with</p>
+                <h2 class="section-title text-light">Skills</h2>
+                <p class="text-white-50">Technologies and tools I work with</p>
             </div>
         </div>
         <div class="row">
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
                 <div class="skill-card h-100">
-                    <div class="skill-icon">
+                    <div class="skill-icon frontend-icon">
                         <i class="fas fa-code"></i>
                     </div>
-                    <h4>Frontend</h4>
+                    <h4 class="text-white">Frontend</h4>
                     <div class="skill-item">
-                        <span>HTML5</span>
+                        <span class="text-white">HTML5</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%"></div>
+                            <div class="progress-bar frontend-bar" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>CSS3</span>
+                        <span class="text-white">CSS3</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 85%"></div>
+                            <div class="progress-bar frontend-bar" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>JavaScript</span>
+                        <span class="text-white">JavaScript</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 80%"></div>
+                            <div class="progress-bar frontend-bar" style="width: 80%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>React.js</span>
+                        <span class="text-white">React.js</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 75%"></div>
+                            <div class="progress-bar frontend-bar" style="width: 75%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>Bootstrap</span>
+                        <span class="text-white">Bootstrap</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%"></div>
+                            <div class="progress-bar frontend-bar" style="width: 90%"></div>
                         </div>
                     </div>
                 </div>
@@ -194,32 +206,32 @@
             
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
                 <div class="skill-card h-100">
-                    <div class="skill-icon">
+                    <div class="skill-icon backend-icon">
                         <i class="fas fa-server"></i>
                     </div>
-                    <h4>Backend</h4>
+                    <h4 class="text-white">Backend</h4>
                     <div class="skill-item">
-                        <span>Node.js</span>
+                        <span class="text-white">Node.js</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
+                            <div class="progress-bar backend-bar" style="width: 70%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>Python</span>
+                        <span class="text-white">Python</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 75%"></div>
+                            <div class="progress-bar backend-bar" style="width: 75%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>MySQL</span>
+                        <span class="text-white">MySQL</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 70%"></div>
+                            <div class="progress-bar backend-bar" style="width: 70%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>MongoDB</span>
+                        <span class="text-white">MongoDB</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 65%"></div>
+                            <div class="progress-bar backend-bar" style="width: 65%"></div>
                         </div>
                     </div>
                 </div>
@@ -227,38 +239,38 @@
             
             <div class="col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
                 <div class="skill-card h-100">
-                    <div class="skill-icon">
+                    <div class="skill-icon tools-icon">
                         <i class="fas fa-tools"></i>
                     </div>
-                    <h4>Tools & Others</h4>
+                    <h4 class="text-white">Tools & Others</h4>
                     <div class="skill-item">
-                        <span>Git & GitHub</span>
+                        <span class="text-white">Git & GitHub</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 85%"></div>
+                            <div class="progress-bar tools-bar" style="width: 85%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>VS Code</span>
+                        <span class="text-white">VS Code</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 90%"></div>
+                            <div class="progress-bar tools-bar" style="width: 90%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>Canva</span>
+                        <span class="text-white">Canva</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 60%"></div>
+                            <div class="progress-bar tools-bar" style="width: 60%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>Photoshop</span>
+                        <span class="text-white">Photoshop</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 60%"></div>
+                            <div class="progress-bar tools-bar" style="width: 60%"></div>
                         </div>
                     </div>
                     <div class="skill-item">
-                        <span>Microsoft Excel</span>
+                        <span class="text-white">Microsoft Excel</span>
                         <div class="progress">
-                            <div class="progress-bar" style="width: 65%"></div>
+                            <div class="progress-bar tools-bar" style="width: 65%"></div>
                         </div>
                     </div>
                 </div>
