@@ -141,60 +141,45 @@ body::before {
     transform: scale(1.1);
 } */
 
+
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
-    background: var(--gradient-hero);
+    background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+    background-size: 400% 400%;
+    animation: gradientShift 12s ease infinite;
     position: relative;
     display: flex;
     align-items: center;
-    background-attachment: fixed;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .hero-section::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: 
-        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.2) 0%, transparent 50%),
-        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        radial-gradient(circle at 30% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 70% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
     z-index: 1;
-    animation: heroFloat 15s ease-in-out infinite;
-}
-
-@keyframes heroFloat {
-    0%, 100% { transform: scale(1) rotate(0deg); }
-    50% { transform: scale(1.05) rotate(1deg); }
 }
 
 .hero-content {
-    position: absolute;
-    z-index: 2;
-    white-space: nowrap;
-    top: -70px;
-}
-.hero-image {
     position: relative;
     z-index: 2;
-    display: flex;
-    justify-content: right;
-    top: 70px;
 }
-.profile-img {
-    width: 350px;
-    height: 350px;
-    object-fit: cover;
-    border: 5px solid rgba(255, 255, 255, 0.3);
-    box-shadow: var(--shadow-xl), var(--shadow-glow);
-    transition: all 0.4s ease;
+
+.role-text {
+    font-size: 1.5rem;
+    font-weight: 500;
+    min-height: 40px;
 }
-.profile-img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25), var(--shadow-glow);
-}
+
 .hero-buttons .btn {
     padding: 12px 30px;
     font-weight: 600;
@@ -203,9 +188,10 @@ body::before {
     text-transform: uppercase;
     letter-spacing: 0.5px;
 }
+
 .hero-buttons .btn:hover {
     transform: translateY(-2px);
-    box-shadow: var(--shadow-lg);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
 }
 
 .scroll-indicator {
@@ -227,7 +213,6 @@ body::before {
     40% { transform: translateY(-10px); }
     60% { transform: translateY(-5px); }
 }
-
 /* About Section */
 #about {
     background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(248, 250, 252, 0.9) 100%);
@@ -249,20 +234,36 @@ body::before {
     box-shadow: var(--shadow-xl);
 }
 
+/* Add a custom font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d1117; /* GitHub-like dark background */
+}
+
+:root {
+    --primary-gradient: linear-gradient(45deg, #6a11cb 0%, #2575fc 100%);
+    --secondary-gradient: linear-gradient(45deg, #00c6ff 0%, #0072ff 100%);
+    --tertiary-gradient: linear-gradient(45deg, #f72585 0%, #7209b7 100%);
+}
+
 #skills {
-    background: var(--gradient-cool);
+    background: #0d1117;
     position: relative;
+    overflow: hidden;
+    padding: 80px 0;
 }
 
 #skills::before {
     content: '';
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(106, 17, 203, 0.1) 0%, rgba(21, 21, 21, 0) 70%);
+    z-index: 0;
 }
 
 #skills .container {
@@ -271,88 +272,115 @@ body::before {
 }
 
 #skills .section-title {
-    color: white;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
 }
 
-#skills .text-muted {
-    color: rgba(255, 255, 255, 0.8) !important;
+#skills .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--primary-gradient);
+    border-radius: 2px;
 }
 
 .skill-card {
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(10px);
-    padding: 30px 25px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 15px;
-    box-shadow: var(--shadow-lg);
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-.skill-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-    transition: left 0.5s;
+    padding: 30px;
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), inset 0 0 10px rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 }
 
 .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: var(--shadow-xl), 0 0 30px rgba(99, 102, 241, 0.3);
-}
-
-.skill-card:hover::before {
-    left: 100%;
-}
-
-[data-bs-theme="dark"] .skill-card {
-    background: #1e293b;
-    border-color: #334155;
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5), 0 0 40px rgba(106, 17, 203, 0.5);
+    border-color: rgba(106, 17, 203, 0.5);
 }
 
 .skill-icon {
-    width: 60px;
-    height: 60px;
-    background: var(--gradient-primary);
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.frontend-icon {
+    background: var(--primary-gradient);
+}
+
+.backend-icon {
+    background: var(--secondary-gradient);
+}
+
+.tools-icon {
+    background: var(--tertiary-gradient);
 }
 
 .skill-icon i {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.skill-card h4 {
     font-size: 1.5rem;
-    color: white;
+    font-weight: 600;
+    margin-bottom: 25px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 
 .skill-item {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    text-align: left;
 }
 
 .skill-item span {
-    display:block;
-    margin-bottom: 5px;
     font-weight: 500;
+    color: #fff;
+    display: block;
+    margin-bottom: 8px;
 }
 
 .progress {
-    height: 8px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
-    background-color: #e5e7eb;
     overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .progress-bar {
-    background: var(--gradient-primary);
     border-radius: 10px;
     transition: width 1.5s ease-in-out;
     animation: progressAnimation 2s ease-out;
+}
+
+.frontend-bar {
+    background: var(--primary-gradient);
+}
+
+.backend-bar {
+    background: var(--secondary-gradient);
+}
+
+.tools-bar {
+    background: var(--tertiary-gradient);
 }
 
 @keyframes progressAnimation {
