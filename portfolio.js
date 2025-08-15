@@ -10,7 +10,7 @@ const portfolioData = {
         aboutImage: "https://res.cloudinary.com/dnuzyfts7/image/upload/v1754992197/WhatsApp_Image_2025-08-12_at_15.09.10_9f04ae68_euhygg.jpg"
     },
     about: {
-        title: "AI Enthusiast & Full-Stack Developer",
+        title: "Passionate About AI & Full-Stack Developer",
         description: "I’m Haricharan Bhupathi, an AI enthusiast studying at Parul University, and a trained Full Stack Web Developer (MERN stack). I’m passionate about merging machine learning with modern web technologies to build intelligent, scalable solutions that have a real-world impact.",
         currentStatus: "Currently pursuing my 3rd year of B.Tech in Artificial Intelligence at Parul University with a CGPA of 7.5. I’m open to internships, collaborative projects, and tech initiatives where I can contribute to solving meaningful problems.",
         funFact: "When I’m not coding, I enjoy exploring AI innovations, attending tech community events, and experimenting with creative design tools like Photoshop and Canva!"
@@ -65,7 +65,6 @@ const portfolioData = {
         }
     ]
 };
-
 AOS.init({
     duration: 1000,
     easing: 'ease-out-quart',
