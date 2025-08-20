@@ -72,6 +72,19 @@ AOS.init({
     offset: 50
 });
 
+var typed = new Typed("#typed-role", {
+        strings: [
+            "Web Developer",
+            "Passionate About AI",
+            "Problem Solver",
+            "Tech Explorer"
+        ],
+        typeSpeed: 70,
+        backSpeed: 40,
+        backDelay: 1500,
+        loop: true
+    });
+
 document.addEventListener('DOMContentLoaded', function() {
     populatePortfolioData();
     handleNavbarScroll();
@@ -588,3 +601,4 @@ window.addEventListener('error', function(e) {
         e.target.alt = 'Image not found';
     }
 }, true);
+
