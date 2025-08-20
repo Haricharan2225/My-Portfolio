@@ -130,18 +130,6 @@ body::before {
 .nav-link:hover::after, .nav-link.active::after {
     width: 100%;
 }
-
-/* Theme Toggle
-.theme-toggle button {
-    border-radius: 50px;
-    transition: all 0.3s ease;
-}
-
-.theme-toggle button:hover {
-    transform: scale(1.1);
-} */
-
-
 /* Hero Section */
 .hero-section {
     min-height: 100vh;
@@ -233,13 +221,11 @@ body::before {
     transform: scale(1.05);
     box-shadow: var(--shadow-xl);
 }
-
-/* Add a custom font */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #0d1117; /* GitHub-like dark background */
+    background-color: #0d1117; 
 }
 
 :root {
@@ -265,7 +251,6 @@ body {
     background: radial-gradient(circle, rgba(106, 17, 203, 0.1) 0%, rgba(21, 21, 21, 0) 70%);
     z-index: 0;
 }
-
 #skills .container {
     position: relative;
     z-index: 1;
